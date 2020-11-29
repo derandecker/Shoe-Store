@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<!--    Using LinearLayout because this is a simple layout with only a few views and no
+        complicated positioning relationship -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeFragment"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/welcome_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/welcome_title"
+        style="@style/TitleStyle" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:text="@string/welcome_text"
+        android:textSize="@dimen/welcome_text_size" />
+
+    <Button
+        android:id="@+id/next_button"
+       style="@style/nextButtonStyle"
+        />
+
+</LinearLayout>
+</layout>

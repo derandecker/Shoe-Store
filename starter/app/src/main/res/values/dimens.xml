@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="horizontal_margin">8dp</dimen>
+    <dimen name="login_text_size">18sp</dimen>
+    <dimen name="buttons_text_size">14sp</dimen>
+    <dimen name="welcome_title_text_size">64sp</dimen>
+    <dimen name="welcome_text_size">20sp</dimen>
+    <dimen name="instructions_text_size">32sp</dimen>
+    <dimen name="shoe_detail_fragment_text_size">18sp</dimen>
+    <dimen name="one_dp">1dp</dimen>
+    <dimen name="sixteen_dp">16dp</dimen>
+</resources>

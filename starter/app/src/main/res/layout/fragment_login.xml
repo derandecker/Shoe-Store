@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- using ConstraintLayout here because the app needs to show the login and password labels and
+            edittext fields in relative positions no matter the screen size, along with the
+             login and create new account buttons -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/user_id_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:hint="@string/user_id_hint"
+        android:text="@string/label_user_id"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/login_text_size"
+
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/user_id_edittext"
+        app:layout_constraintEnd_toStartOf="@+id/user_id_edittext"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/user_id_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/login_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41000003"
+        tools:text="derandecker" />
+
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_password"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/login_text_size"
+        app:layout_constraintBaseline_toBaselineOf="@+id/password_edittext"
+        app:layout_constraintEnd_toStartOf="@+id/password_edittext"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/user_id_label" />
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="@dimen/login_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/user_id_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/user_id_edittext"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/continue_button_color"
+        android:text="@string/login_button_text"
+        android:textSize="@dimen/buttons_text_size"
+        app:chainUseRtl="false"
+        app:layout_constraintBaseline_toBaselineOf="@+id/register_button"
+        app:layout_constraintEnd_toStartOf="@+id/register_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CDDC39"
+        android:text="@string/register_button_text"
+        android:textSize="@dimen/buttons_text_size"
+        app:chainUseRtl="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/password_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/password_edittext"
+        app:layout_constraintVertical_bias="0.16" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_user_id">User ID</string>
+    <string name="label_password">Password</string>
+    <string name="login_button_text">Login</string>
+    <string name="register_button_text">Create New Account</string>
+    <string name="user_id_hint">User ID</string>
+    <string name="welcome_title">WELCOME!</string>
+    <string name="welcome_text">Welcome! You will use this app to add and keep track of shoe inventory in your store. Any questions, comments, or suggestions can be sent to feedback@example.com</string>
+    <string name="next_button_text"><![CDATA[>>]]></string>
+    <string name="shoe_name_label">Shoe Name</string>
+    <string name="shoe_name_edittext_content_description">Shoe Name Entry</string>
+    <string name="company_label">Company</string>
+    <string name="company_edittext_content_description">Company Name Entry</string>
+    <string name="shoe_size_label">Shoe Size</string>
+    <string name="shoe_size_edittext_content_description">Shoe Size Entry</string>
+    <string name="description_label">Description</string>
+    <string name="description_edittext_content_description">Description Entry</string>
+    <string name="cancel_button_text">CANCEL</string>
+    <string name="save_button_text">SAVE</string>
+    <string name="add_new_shoe_title">Add New Shoe</string>
+    <string name="instructions_menu">Instructions</string>
+    <string name="shoe_list_menu">Shoe List</string>
+    <string name="instructions_1">1. On the Shoe List screen, Click the + button at bottom right.</string>
+    <string name="instructions_2">2. Enter shoe information, then click the Save button.</string>
 </resources>

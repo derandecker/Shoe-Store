@@ -16,4 +16,40 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="nextButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:backgroundTint">@color/continue_button_color</item>
+        <item name="android:contentDescription">Next Button</item>
+        <item name="android:hint">Next</item>
+        <item name="android:text">@string/next_button_text</item>
+        <item name="android:textSize">@dimen/buttons_text_size</item>
+    </style>
+
+    <style name="shoeDetailEditTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:textSize">@dimen/shoe_detail_fragment_text_size</item>
+    </style>
+
+    <style name="shoeDetailLabelStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">@dimen/shoe_detail_fragment_text_size</item>
+    </style>
+
+    <style name="TitleStyle">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@android:color/holo_green_light</item>
+        <item name="android:textSize">@dimen/welcome_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>
